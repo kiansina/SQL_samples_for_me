@@ -13,6 +13,8 @@ psql Strategica Sina
 --
 \dt -- shows the tables
 --
+\i filenam.sql --Runs the sql script saved in filename.sql
+--
 create table Clients (
   Name varchar(128),
   Location varchar(128)
