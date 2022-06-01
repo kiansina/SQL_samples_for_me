@@ -1,3 +1,5 @@
+-- Subqueries Should not be used in online systems. they decrease optimization.
+-- If we use it once, 5 seconds does not chane any thing. But if it is online and millions of people would use that it would be problem.
 create table racing (
  make text,
  model text,
