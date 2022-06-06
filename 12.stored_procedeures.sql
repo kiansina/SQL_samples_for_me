@@ -24,20 +24,20 @@ return new;
 end;
 $$ language plpgsql;
 
-create trigger set_timestamp
+create trigger set_timestramp
   before update on post
   for each row
-  execute procedure trigger_set_timestamp();
+  execute procedure trigger_set_timestramp();
 
-create trigger set_timestamp
+create trigger set_timestramp
   before update on fav
   for each row
-  execute procedure trigger_set_timestamp();
+  execute procedure trigger_set_timestramp();
 
-create trigger set_timestamp
+create trigger set_timestramp
   before update on comment
   for each row
-  execute procedure trigger_set_timestamp();
+  execute procedure trigger_set_timestramp();
 
 
 -- after writing above code, now if we update something, the update_at column would be updated.
