@@ -19,7 +19,7 @@ returning *;
 create or replace function trigger_set_timestramp()
   returns trigger as $$
 begin
-new.update_at = now(); --new. means everything new happens like a change or an update.
+new.updated_at = now(); --new. means everything new happens like a change or an update.
 return new;
 end;
 $$ language plpgsql;
